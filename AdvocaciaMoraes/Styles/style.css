@@ -21,6 +21,7 @@ html {
 body {
     overflow-x: hidden;
 }
+/*botao aceitar cookies*/
 .cookie-banner {
   position: fixed;
   bottom: 0;
@@ -85,7 +86,7 @@ body {
 }
 /* Botão hamburger */
 menu-toggle i {
-    transition: transform 0.3s ease;
+    transition: transform 0.8s ease-in-out;
   }
   
   .menu-toggle.active .fa-bars {
@@ -174,7 +175,7 @@ menu-toggle i {
 
   .cabecalho {
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/Imagem/stfbranco.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/MoraesAdvocacia-main/AdvocaciaMoraes/Imagem/stfbranco.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -274,14 +275,29 @@ position: relative;
 }
 .caracteristicas ul{
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    
 }
 .caracteristicas li{
     flex: 1 1 200px;
     list-style: none;
     text-align: center;
-    padding:20px ;
+    padding: 5px;
+}
+.caracteristicas p{
+  text-align: center;
+}
+
+.caixa-caracteristicas{
+  background-color: rgba(255, 255, 255, 0.05); 
+  padding: 1rem;
+  max-width: 300px;
+  margin: 5px auto;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
 }
 .fas{
     font-size: 60px;
@@ -419,7 +435,7 @@ padding:6rem 2rem;
   }
   
   .container-contatos p {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 40px;
     color: #ccc;
   }
@@ -469,4 +485,15 @@ padding:6rem 2rem;
     color: #ccc;
     background-color: #1e1e1e;
     font-family: 'Poppins', sans-serif;
+   
   }
+  footer p{
+    padding: 15px;
+  }
+.cookies-link-html{
+  color: #fff;
+  text-decoration: none;
+  margin: 20px;
+  padding:5px;
+  border: 1px solid var(--cor-da-borda);
+}
