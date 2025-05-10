@@ -76,6 +76,28 @@
 .subtitulo-home {
     font-size: 1rem;
 }
+.servicos-caixa {
+  display: flex;
+  flex-direction: column;
+  overflow-x: unset;
+  white-space: normal;
+  padding-left: 0; /* remove padding horizontal extra */
+  align-items: center; /* centraliza os cards */
+}
+
+.servicos-caixa .servicos-card:first-child {
+  margin-left: 0; /* remove margem extra no primeiro */
+}
+
+.servicos-card {
+  width: 90%; /* ocupa quase toda a largura */
+  margin-bottom: 1rem;
+}
+.servicos-card p{
+ text-align: left;
+ word-spacing: normal;
+}
+
 .caracteristicas h3{
   font-size: 15px;
 }

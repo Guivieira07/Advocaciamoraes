@@ -376,17 +376,30 @@ padding:6rem 2rem;
     text-align: center;
     margin-bottom: 40px;
 }
-.servicos-caixa{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  justify-content: center;
-  margin-bottom: 50px;
+
+
+.servicos-caixa::-webkit-scrollbar{
+    width: 0px;
+    background:transparent;
 }
+.servicos-caixa .servicos-card:first-child {
+  margin-left: 1rem; /* Garante um espaçamento inicial */
+}
+  .servicos-caixa {
+    display: flex;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-left: 0.5rem;
+  }
+
 .servicos-card{
-   
     background-color: rgba(255, 255, 255, 0.1);
     padding: 2rem;
     border-radius: 16px;
@@ -395,8 +408,9 @@ padding:6rem 2rem;
     overflow-x: hidden;
     transition: 0.5s all ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-
+flex-shrink: 0;
 }
+
 
 .servicos-conteudo{
     padding: 1rem;
