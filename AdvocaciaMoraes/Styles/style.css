@@ -378,43 +378,39 @@ padding:6rem 2rem;
 }
 
 
-.servicos-caixa::-webkit-scrollbar{
-    width: 0px;
-    background:transparent;
-}
+
 .servicos-caixa .servicos-card:first-child {
   margin-left: 1rem; /* Garante um espaçamento inicial */
 }
-  .servicos-caixa {
-    display: flex;
-    gap: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-content: flex-start;
-    margin-bottom: 50px;
-    overflow-x: auto;
-    white-space: nowrap;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    padding-left: 0.5rem;
-  }
+ .servicos-caixa {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cards quebrem linha */
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+  justify-content: center; /* Centraliza os cards */
+  padding: 0 0.5rem;
+  overflow: visible; /* Remove rolagem horizontal */
+}
 
-.servicos-card{
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
-    border-radius: 16px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20px);
-    overflow-x: hidden;
-    transition: 0.5s all ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-flex-shrink: 0;
+.servicos-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  transition: 0.5s all ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  flex: 1 1 300px; /* Adapta o tamanho dos cards */
+  max-width: 350px;
+  min-width: 280px;
+  box-sizing: border-box;
 }
 
 
 .servicos-conteudo{
     padding: 1rem;
-    text-align: justify;
+    text-align: left;
 }
 .servicos-conteudo i{
     color: var(--cor-da-borda);
